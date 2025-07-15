@@ -31,18 +31,23 @@
     }
     section {
       padding: 4rem 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #1a1a1a;
     }
-    .skills span, .contact a {
+    ul {
+      padding-left: 1.5rem;
+    }
+    .contact a {
       display: inline-block;
       margin: 0.3rem 0.5rem;
       background: #e0e0e0;
       padding: 0.5rem 1rem;
       border-radius: 5px;
+      text-decoration: none;
+      color: #333;
     }
     footer {
       background: #2f3e46;
@@ -51,85 +56,106 @@
       padding: 2rem;
       margin-top: 2rem;
     }
-    a {
-      color: #0077cc;
-    }
   </style>
 </head>
 <body>
-
   <header>
     <h2>Sushmitha G</h2>
     <nav>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <h1>Cloud & Data Engineer</h1>
-    <p>Hi! I'm Sushmitha, a Cloud and Data Engineer with 3+ years of experience across AWS and Azure platforms. I specialize in serverless architectures, CI/CD pipelines, data engineering, and infrastructure automation.</p>
-    <p><strong>Currently open to full-time roles</strong> in Cloud Engineering, Data Engineering, or DevOps Engineering.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills & Tools</h2>
-    <div class="skills">
-      <span>Python</span><span>SQL</span><span>Java</span><span>Shell Scripting</span>
-      <span>AWS Lambda</span><span>S3</span><span>DynamoDB</span><span>API Gateway</span>
-      <span>Azure Data Factory</span><span>Terraform</span><span>ARM Templates</span>
-      <span>Apache Spark</span><span>Airflow</span><span>GitHub Actions</span><span>CI/CD</span>
-    </div>
+    <p><strong>Professional Summary:</strong><br>
+      Cloud and Data Engineer with 3+ years of experience in building scalable, cloud-native solutions on AWS and Azure. Specialized in serverless application development, infrastructure automation, data pipeline engineering, and real-time analytics solutions.
+    </p>
+    <p><strong>Education:</strong><br>
+      <strong>Master of Science – Advanced Data Analytics</strong><br>
+      University of North Texas, Denton, Texas, USA (2023–2025) – GPA: 3.6/4.0<br>
+      <strong>Bachelor of Technology – Computer Science and Engineering</strong><br>
+      G. Narayanamma Institute of Technology and Science, Telangana, India (2018–2022) – GPA: 8.49/10
+    </p>
   </section>
 
   <section id="experience">
-    <h2>Experience</h2>
-    <h3>AWS Developer - Zenoitech (2023–2024)</h3>
-    <ul>
-      <li>Developed serverless backend apps using AWS Lambda & API Gateway</li>
-      <li>Implemented event-driven architecture with SNS, SQS, and S3 triggers</li>
-      <li>Automated infrastructure using CloudFormation</li>
-    </ul>
+    <h2>Work Experience</h2>
 
-    <h3>Cloud Engineer - Novartis (2022–2023)</h3>
+    <h3>AWS Developer – Zenoitech (Aug 2023 – Sept 2024)</h3>
     <ul>
-      <li>Built scalable pipelines with Azure Data Factory</li>
-      <li>Used Terraform and ARM for resource provisioning</li>
-      <li>Worked on cost optimization and cloud monitoring using Azure Monitor</li>
+      <li>Developed serverless backend applications using AWS Lambda and API Gateway.</li>
+      <li>Integrated AWS Lambda with S3 and DynamoDB to automate backend workflows.</li>
+      <li>Created CloudFormation templates for infrastructure setup.</li>
+      <li>Used S3 triggers, SNS, and SQS to build event-driven architecture.</li>
+      <li>Managed NoSQL databases with performance tuning in DynamoDB.</li>
+      <li>Set up monitoring using CloudWatch with automated alerts.</li>
+      <li>Implemented CI/CD with GitHub Actions and AWS CodePipeline.</li>
     </ul>
+    <p><strong>Tools:</strong> AWS Lambda, EC2, API Gateway, DynamoDB, SQS, SNS, S3, CloudFormation, CloudWatch, GitHub Actions</p>
 
-    <h3>Data Engineer - Celpox (2021)</h3>
+    <h3>Cloud Engineer – Novartis (Jan 2022 – July 2023)</h3>
     <ul>
-      <li>Created Spark-based data pipelines and automated ETL workflows</li>
-      <li>Worked with Airflow, PostgreSQL, and AWS S3 for data processing</li>
+      <li>Built cloud infrastructure using Azure VMs, Blob Storage, and SQL Database.</li>
+      <li>Developed ETL pipelines with Azure Data Factory and automated deployments.</li>
+      <li>Applied RBAC policies, Azure Monitor, and cost optimization techniques.</li>
     </ul>
+    <p><strong>Tools:</strong> Azure Data Factory, Azure VMs, Azure SQL, Terraform, Azure DevOps, Azure Key Vault</p>
+
+    <h3>Data Engineer – Celpox (Jan 2021 – Dec 2021)</h3>
+    <ul>
+      <li>Designed scalable Spark-based pipelines and automated ETL workflows.</li>
+      <li>Used Airflow for scheduling, PostgreSQL for storage, and AWS S3 for staging.</li>
+    </ul>
+    <p><strong>Tools:</strong> Apache Spark, Airflow, PostgreSQL, AWS S3, PySpark</p>
   </section>
 
   <section id="projects">
-    <h2>Projects & Achievements</h2>
+    <h2>Projects</h2>
+
+    <h3>Scalable Data Pipeline for Cardiovascular Risk Prediction</h3>
     <ul>
-      <li>Google Advanced Data Analytics Certification – Coursera (2023)</li>
-      <li>Top 3 project – Gesture-Controlled Accessibility Platform (National Innovation Expo)</li>
-      <li>Best Innovation Project – Real-time ingestion + predictive analytics prototype (Novartis)</li>
+      <li>Developed ML pipeline with 92% accuracy using Scikit-learn for disease prediction.</li>
+      <li>Implemented data wrangling, normalization, feature engineering, and causal inference.</li>
+      <li>Used PySpark and Scala for batch and streaming transformations.</li>
+      <li>Deployed on AWS EC2 with data from S3, visualized results using Streamlit and BI tools.</li>
+    </ul>
+    <p><strong>Tools:</strong> Python, Scikit-learn, PySpark, Scala, Streamlit, Tableau, Power BI, AWS EC2, S3</p>
+
+    <h3>Real-Time Gesture-Controlled Communication Platform</h3>
+    <ul>
+      <li>Built a real-time gesture recognition system using TensorFlow and OpenCV.</li>
+      <li>Integrated Flask, Alexa SDK, and Snowflake for gesture processing and analytics.</li>
+      <li>Built CI/CD-enabled API backend and sentiment-aware dashboards.</li>
+    </ul>
+    <p><strong>Tools:</strong> Python, OpenCV, TensorFlow, Flask, Alexa SDK, Snowflake, AWS EC2, SQL, Power BI</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Completed Google Advanced Data Analytics Certification – Coursera (2023)</li>
+      <li>Top 3 at National Innovation Expo for gesture-controlled accessibility platform</li>
+      <li>Awarded 'Best Innovation Project' – Novartis Hackathon</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Let's connect for opportunities or collaboration!</p>
+    <p>Feel free to reach out if you'd like to connect or collaborate on exciting cloud/data projects!</p>
     <div class="contact">
-      <a href="mailto:sushmithagangadari996@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/your-link-here" target="_blank">LinkedIn</a>
-      <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
+      <a href="mailto:sushmithagangadari996@gmail.com">📧 sushmithagangadari996@gmail.com</a>
+      <a href="tel:+14698502374">📞 +1 (469) 850-2374</a>
+      <a href="https://www.linkedin.com/in/your-link-here" target="_blank">🔗 LinkedIn</a>
     </div>
   </section>
 
   <footer>
     <p>© 2025 Sushmitha G • Built with 💻 and ☁️</p>
   </footer>
-
 </body>
 </html>
